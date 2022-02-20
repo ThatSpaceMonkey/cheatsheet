@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <title>Cheatsheet</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="top">Cheatsheet</h1>
+        </header>
+        <nav class="sidenavl">
+            <ul>
+                <li><a href="#top" class="section">TOP</a></li>
+                <li><a href="#html" class="section">HTML</a></li>
+                <li><a href="#elements" class="sub">Elements</a></li>
+                <li><a href="#structure" class="sub">Structure</a></li>
+                <li><a href="#tables" class="sub">Tables</a></li>
+                
+                <li><a href="#css" class="section">CSS</a></li>
+                <li><a href="#selectors" class="sub">Selectors</a></li>
+                <li><a href="#visual" class="sub">Visual Rules</a></li>
+                <li><a href="#box" class="sub">The Box Model</a></li>
+                <li><a href="#display" class="sub">Display</a></li>
+                <li><a href="#positioning" class="sub">Positioning</a></li>
+                <li><a href="#colors" class="sub">Colors</a></li>
+                <li><a href="#typography" class="sub">Typography</a></li>
+
+                <li><a href="#git" class="section">GIT</a></li>
+                <li><a href="#command" class="sub">Command Line</a></li>
+            </ul>
+        </nav>
+
+
+        <nav class="sidenavr">
+            <ul>
+                <li><a href="#top" class="section">TOP</a></li>
+                <li><a href="#" class="section">Sec</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                
+                <li><a href="#" class="section">Sec</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+
+                <li><a href="#" class="section">Sec</a></li>
+                <li><a href="#" class="sub">Sub</a></li>
+            </ul>
+        </nav>
+
+
+
+        <main>
+            <!--HTML-->
+            <h2 id="html" class="section">HTML</h2>
+                <!--Elements-->
+                <div id="elements">
+                    <h3>Elements</h3>
+                    <table>
+                        <thead>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">&lt;h1&gt; - &lt;h6&gt;</td>
+                                <td class="name">Heading Elements</td>
+                                <td class="description">- ordered from the highest level to the lowest</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;li&gt;</td>
+                                <td class="name">List Item Element</td>
+                                <td class="description">- element to create a list</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;ol&gt;</td>
+                                <td class="name">Ordered List Element</td>
+                                <td class="description">- items in sequential order (numbered)</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;ul&gt;</td>
+                                <td class="name">Unordered List Element</td>
+                                <td class="description">- items in no particular order (bullet point)</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;div&gt;</td>
+                                <td class="name">Division Element</td>
+                                <td class="description">- divides a document into sections</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">id=""</td>
+                                <td class="name">ID Attribute</td>
+                                <td class="description">- can be applied to only one element in a page</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">class=""</td>
+                                <td class="name">Class Attribute</td>
+                                <td class="description">- can be applied to multiple elements</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;p&gt;</td>
+                                <td class="name">Paragraph Element</td>
+                                <td class="description">- displays a block of text</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;span&gt;</td>
+                                <td class="name">Span Element</td>
+                                <td class="description">- used to group text for styling purposes</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;strong&gt;</td>
+                                <td class="name">Strong Element</td>
+                                <td class="description">- will render text in <strong>bold</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;em&gt;</td>
+                                <td class="name">Emphasis Element</td>
+                                <td class="description">- will render text <em>itelicized</em></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;video&gt;</td>
+                                <td class="name">Video Element</td>
+                                <td class="description">- embeds media player for video playback</td>
+                            </tr>                            
+                            <tr>
+                                <td class="tag">&lt;audio&gt;</td>
+                                <td class="name">Audio Element</td>
+                                <td class="description">- implements audio into a website</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;img&gt;</td>
+                                <td class="name">Image Element</td>
+                                <td class="description">- embeds images in documents</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tag">&lt;embed&gt;</td>
+                                <td class="name">Embedding Element</td>
+                                <td class="description">- can be used to implement any type of media</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">alt=""</td>
+                                <td class="name">Alt Attribute</td>
+                                <td class="description">- adds alternative text to <strong>&lt;img&gt;</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;br&gt;</td>
+                                <td class="name">Line Break Element</td>
+                                <td class="description">- creates a line break in text</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;figure&gt;</td>
+                                <td class="name">Figure Element</td>
+                                <td class="description">- used to encapsulate media</td>
+                            </tr>                           
+                            <tr>
+                                <td class="tag">&lt;figcaption&gt;</td>
+                                <td class="name">Figcaption Element</td>
+                                <td class="description">- used describe the media within the <strong>&lt;figure&gt;</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;section&gt;</td>
+                                <td class="name">Section Element</td>
+                                <td class="description">- defines elements in a document with the same theme</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;article&gt;</td>
+                                <td class="name">Article Element</td>
+                                <td class="description">- independent content for a specific theme</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;aside&gt;</td>
+                                <td class="name">Aside Element</td>
+                                <td class="description">- used to mark additional info</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Structure-->
+                <div id="structure">
+                    <h3>Structure</h3>
+                    <table>
+                        <thead>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">&lt;!DOCTYPE html&gt;</td>
+                                <td class="name">HTML Declaration</td>
+                                <td class="description">- required as the first line for HTML5 doc</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;a&gt;</td>
+                                <td class="name">Anchor Element</td>
+                                <td class="description">- used to create hyperlinks</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;head&gt;</td>
+                                <td class="name">Head Element</td>
+                                <td class="description">- general info about HTML page that isn't displayed</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">target=""</td>
+                                <td class="name">Target Attribute</td>
+                                <td class="description">- with value of <strong>_blank</strong> hyperlink will open in a new tab</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">href="#"</td>
+                                <td class="name">Section link</td>
+                                <td class="description">- <strong>href</strong> with <strong>#</strong> points to desired <strong>id</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;html&gt;</td>
+                                <td class="name">HTML Element</td>
+                                <td class="description">- all HTML content goes in it</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;!--comment--&gt;</td>
+                                <td class="name">Comments</td>
+                                <td class="description">- used to make notes</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;title&gt;</td>
+                                <td class="name">Title Element</td>
+                                <td class="description">- title displayed in browser's tab</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;style&gt;</td>
+                                <td class="name">Style Element</td>
+                                <td class="description">- lets CSS code be written in HTML file</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">style=""</td>
+                                <td class="name">Style Attribute</td>
+                                <td class="description">- used for <em>inline styles</em></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;link&gt;</td>
+                                <td class="name">Link Element</td>
+                                <td class="description">- link HTML docs to external resources</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">href=""</td>
+                                <td class="name">Hypertext Reference</td>
+                                <td class="description">- path to specify URL. Local: <strong>./path</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">rel=""</td>
+                                <td class="name">Relation Attribute</td>
+                                <td class="description">- used to specify relation. Ex: <strong>rel="stylesheet"</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">type=""</td>
+                                <td class="name">Type Attribute</td>
+                                <td class="description">- to define the type of content. Ex: <strong>type="text/css"</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Tables-->
+                <div id="tables">
+                    <h3>Tables</h3>
+                    <table>
+                        <thead>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">&lt;table&gt;</td>
+                                <td class="name">Table Element</td>
+                                <td class="description">- all table content goes in it</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;tr&gt;</td>
+                                <td class="name">Table Row</td>
+                                <td class="description">- used to add rows</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;td&gt;</td>
+                                <td class="name">Table Data</td>
+                                <td class="description">- nested inside <strong>&lt;tr&gt;</strong> to add a cell of data</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;thead&gt;</td>
+                                <td class="name">Table Head</td>
+                                <td class="description">- defines the headings of table columns</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;th&gt;</td>
+                                <td class="name">Table Heading</td>
+                                <td class="description">- used to add titles to rows and columns</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;tbody&gt;</td>
+                                <td class="name">Table Body</td>
+                                <td class="description">- contains all table data other than table heading</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;tfoot&gt;</td>
+                                <td class="name">Table Footer</td>
+                                <td class="description">- uses table rows to give footer content</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">rowspan=""</td>
+                                <td class="name">Rowspan Attribute</td>
+                                <td class="description">- indicates how many rows cell should span</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">colspan=""</td>
+                                <td class="name">Colspan Attribute</td>
+                                <td class="description">- indicates how many columns cell should span</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            <!--CSS-->
+            <h2 id="css" class="section">CSS</h2>
+                <!--Selectors-->
+                <div id="selectors">
+                    <h3>Selectors</h3>
+                    <table>
+                        <thead>
+                            <th>Selector</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>                            
+                            <tr>
+                                <td class="tag">p {}</td>
+                                <td class="name">Type Selector</td>
+                                <td class="description">- selects all <strong>&lt;p&gt;</strong> tags</td>
+                            </tr>                            
+                            <tr>
+                                <td class="tag">.classname {}</td>
+                                <td class="name">Class Selector</td>
+                                <td class="description">- selects all elements with <strong>class="classname"</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">#idname {}</td>
+                                <td class="name">ID Selector</td>
+                                <td class="description">- selects elements with <strong>id="idname"</strong></td>
+                            </tr>
+                            <tr>
+
+                            <!--Grouping Part-->
+                            <thead>
+                                <th>Chaining</th>
+                                <th colspan="2">Description</th>
+                            </thead>
+
+                            <tr>
+                                <td class="tag">element1,element2</td>
+                                <td colspan="2" class="description">- all element1 and all element2</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">element1 element2</td>
+                                <td colspan="2" class="description">- all element2 inside element1</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">.classname1.classname2</td>
+                                <td colspan="2" class="description">- all elements with classname1 and classname2 in its <strong>class=""</strong></td>
+                            </tr>
+                            <tr>
+                                <td class="tag">.classname .classname2</td>
+                                <td colspan="2" class="description">- all elements with classname2 that is a child of an element with name1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Visual Rules-->
+                <div id="visual">
+                    <h3>Visual Rules</h3>
+                    <table>
+                        <thead>
+                            <th>Property</th>
+                            <th colspan="2">Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--The Box Model-->
+                <div id="box">
+                    <h3>The Box Model</h3>
+                    <table>
+                        <thead>
+                            <th>Property</th>
+                            <th colspan="2">Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Display-->
+                <div id="display">
+                    <h3>Display</h3>
+                    <table>
+                        <thead>
+                            <th>Property</th>
+                            <th colspan="2">Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Positioning-->
+                <div id="positioning">
+                    <h3>Positioning</h3>
+                    <table>
+                        <thead>
+                            <th>Property</th>
+                            <th colspan="2">Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Colors-->
+                <div id="colors">
+                    <h3>Colors</h3>
+                    <table>
+                        <thead>
+                            <th>Property</th>
+                            <th colspan="2">Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Typography-->
+                <div id="typography">
+                    <h3>Typography</h3>
+                    <table>
+                        <thead>
+                            <th>Property</th>
+                            <th colspan="2">Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            <!--Git-->
+            <h2 id="git" class="section">Git</h2>
+                <!--Command Line-->
+                <div id="command">
+                    <h3>Command Line</h3>
+                    <table>
+                        <thead>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tag">&lt;...&gt;</td>
+                                <td class="name">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;...&gt;</td>
+                                <td class="name">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;...&gt;</td>
+                                <td class="name">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;...&gt;</td>
+                                <td class="name">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">&lt;...&gt;</td>
+                                <td class="name">...</td>
+                                <td class="description">...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+        </main>
+    </body>
+</html>
