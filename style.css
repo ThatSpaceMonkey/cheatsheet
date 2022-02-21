@@ -25,7 +25,8 @@ h1 {
 
 nav.sidenavl {
   margin-top: -300px;
-  margin-left: 7px;
+  margin-left: 0px;
+  
 }
 
 nav.sidenavr {
@@ -34,12 +35,6 @@ nav.sidenavr {
   position: fixed;
   right: 0;
   text-align: right;
-
-}
-
-nav ul {
-  list-style: none;
-  position: sticky;
 }
 
 nav ul {
@@ -95,6 +90,17 @@ td {
   color: #000000;
   font-weight: 900;
   width: 115px;
+  height: 25px;
+  font-size: 13px;
+}
+
+.property {
+  text-align: center;
+  font-family: monospace;
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #000000;
+  font-weight: 900;
+  width: 160px;
   height: 25px;
   font-size: 13px;
 }

@@ -29,7 +29,8 @@
                 <li><a href="#typography" class="sub">Typography</a></li>
 
                 <li><a href="#git" class="section">GIT</a></li>
-                <li><a href="#command" class="sub">Command Line</a></li>
+                <li><a href="#filesystem" class="sub">Filesystem</a></li>
+                <li><a href="#commands" class="sub">Git Commands</a></li>
             </ul>
         </nav>
 
@@ -83,12 +84,12 @@
                             </tr>
                             <tr>
                                 <td class="tag">&lt;ol&gt;</td>
-                                <td class="name">Ordered List Element</td>
+                                <td class="name">Ordered List</td>
                                 <td class="description">- items in sequential order (numbered)</td>
                             </tr>
                             <tr>
                                 <td class="tag">&lt;ul&gt;</td>
-                                <td class="name">Unordered List Element</td>
+                                <td class="name">Unordered List</td>
                                 <td class="description">- items in no particular order (bullet point)</td>
                             </tr>
                             <tr>
@@ -363,21 +364,20 @@
                                 <th>Chaining</th>
                                 <th colspan="2">Description</th>
                             </thead>
-
                             <tr>
-                                <td class="tag">element1,element2</td>
+                                <td class="property">element1,element2</td>
                                 <td colspan="2" class="description">- all element1 and all element2</td>
                             </tr>
                             <tr>
-                                <td class="tag">element1 element2</td>
+                                <td class="property">element1 element2</td>
                                 <td colspan="2" class="description">- all element2 inside element1</td>
                             </tr>
                             <tr>
-                                <td class="tag">.classname1.classname2</td>
+                                <td class="property">.classname1.classname2</td>
                                 <td colspan="2" class="description">- all elements with classname1 and classname2 in its <strong>class=""</strong></td>
                             </tr>
                             <tr>
-                                <td class="tag">.classname .classname2</td>
+                                <td class="property">.classname .classname2</td>
                                 <td colspan="2" class="description">- all elements with classname2 that is a child of an element with name1</td>
                             </tr>
                         </tbody>
@@ -389,29 +389,65 @@
                     <h3>Visual Rules</h3>
                     <table>
                         <thead>
+                            <th>Pseudo-Class</th>
+                            <th colspan="2">Description</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="property">:hover</td>
+                                <td class="description">- changes when holding mouse over the item</td>
+                            </tr>
+                            <tr>
+                                <td class="property">:focus</td>
+                                <td class="description">- matches when an element has focus</td>
+                            </tr>
+                            <tr>
+                                <td class="property">:active</td>
+                                <td class="description">- matches when an item is being activates by the user</td>
+                            </tr>
+                        </tbody>
+                        
+                        <!--Second part of the table-->
+                        <thead>
                             <th>Property</th>
                             <th colspan="2">Description</th>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">!important</td>
+                                <td class="description">- used to override other declarations and ignore selector specificity</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">font-size:</td>
+                                <td class="description">- is used to set text size</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">background-color:</td>
+                                <td class="description">- controls background color of elements</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">font-weight:</td>
+                                <td class="description">- used to set the boldness of text</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">text-align:</td>
+                                <td class="description">- used to set the text alignment of inline contents</td>
+                            </tr>
+                            <tr>
+                                <td class="property">font-family:</td>
+                                <td class="description">- specifies the typeface in a rule set</td>
+                            </tr>
+                            <tr>
+                                <td class="property">color:</td>
+                                <td class="description">- sets the foreground text color of an element</td>
+                            </tr>
+                            <tr>
+                                <td class="property">opacity:</td>
+                                <td class="description">- ranges from <strong>0</strong> to <strong>1</strong> and controls the transparency of an element</td>
+                            </tr>
+                            <tr>
+                                <td class="property"> url("")</td>
+                                <td class="description">- links resources to properties (can set <strong>background-image:</strong>)</td>
                             </tr>
                         </tbody>
                     </table>
@@ -427,24 +463,40 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">padding:</td>
+                                <td class="description">- clears an area around the content</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">border:<br>width style color;</td>
+                                <td class="description">- goes around the padding and content</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">margin:</td>
+                                <td class="description">- clears an area outside the border</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">margin: auto;</td>
+                                <td class="description">- can be used to horizontally center elements</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">overflow:</td>
+                                <td class="description">- determines how browser behaves when content is too large</td>
+                            </tr>
+                            <tr>
+                                <td class="property">max-width:</td>
+                                <td class="description">- caps size even when <strong>width:</strong> property is larger</td>
+                            </tr>
+                            <tr>
+                                <td class="property">visibility:</td>
+                                <td class="description">- renders <stong>hidden</stong> objects invisible to users without removing them</td>
+                            </tr>
+                            <tr>
+                                <td class="property">box-sizing:</td>
+                                <td class="description">- sets how total width and height of an element is calculated</td>
+                            </tr>
+                            <tr>
+                                <td class="property">border-radius:</td>
+                                <td class="description">- used to modify border shape</td>
                             </tr>
                         </tbody>
                     </table>
@@ -460,24 +512,20 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">display: block;</td>
+                                <td class="description">- element displayed as a block item (like <strong>&lt;p&gt;</strong>)</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">display: inline;</td>
+                                <td class="description">- element displayed as an inline element (like <strong>&lt;span&gt;</strong>)</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">display: inline-block;</td>
+                                <td class="description">- element displayed as an inline element but can apply height and width</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
-                            </tr>
-                            <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">display: grid;</td>
+                                <td class="description">- element displayed as a block-level grid container</td>
                             </tr>
                         </tbody>
                     </table>
@@ -493,24 +541,32 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">z-index:</td>
+                                <td class="description">- sets order for elements along the z-axis</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">position: static;</td>
+                                <td class="description">- default type of positioning</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">position: relative;</td>
+                                <td class="description">- similar to <strong>static</strong> but can modify: <em>top</em>, <em>bottom</em>, <em>left</em> and <em>right</em> positions</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">position: fixed;</td>
+                                <td class="description">- always stays in the same place even when the page is scrolled</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">position: absolute;</td>
+                                <td class="description">- positioned relative to the nearest ancestor</td>
+                            </tr>
+                            <tr>
+                                <td class="property">posiion: sticky;</td>
+                                <td class="description">- positioned based on scroll</td>
+                            </tr>
+                            <tr>
+                                <td class="property">float:</td>
+                                <td class="description">- determines how far left/right and element should float</td>
                             </tr>
                         </tbody>
                     </table>
@@ -526,24 +582,28 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">color: <em>name</em>;</td>
+                                <td class="description">- name keywords can be used to set color property values</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">#<em>ff0000</em> / #<em>f00</em></td>
+                                <td class="description">- hexadecimal value, repeated values can be shortened</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">hsl(<em>200</em>, <em>70%</em>, <em>50%</em>);</td>
+                                <td class="description">- hue, saturation, lightness values ranged from 0 to 360</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">rgb(<em>249</em>, <em>2</em>, <em>171</em>);</td>
+                                <td class="description">- red, green, blue values ranged from 0 to 255</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">hsla/rgba</td>
+                                <td class="description">- fourth value ranged between 0.0 and 1.0 to determine transparency</td>
+                            </tr>
+                            <tr>
+                                <td class="property">color: transparent;</td>
+                                <td class="description">- used to create fully transparent elements</td>
                             </tr>
                         </tbody>
                     </table>
@@ -559,24 +619,16 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">font-style:</td>
+                                <td class="description">- determines how text will appear, can be used to make text italic</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">line-height:</td>
+                                <td class="description">- desclares the vertical spacing between lines of text</td>
                             </tr>
                             <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
-                            </tr>
-                            <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
-                            </tr>
-                            <tr>
-                                <td class="tag">...</td>
-                                <td class="description">...</td>
+                                <td class="property">@font-family {}</td>
+                                <td class="description">- allows external fonts or font files to be imported directly</td>
                             </tr>
                         </tbody>
                     </table>
@@ -585,8 +637,8 @@
             <!--Git-->
             <h2 id="git" class="section">Git</h2>
                 <!--Command Line-->
-                <div id="command">
-                    <h3>Command Line</h3>
+                <div id="filesystem">
+                    <h3>Filesystem</h3>
                     <table>
                         <thead>
                             <th>Tag</th>
@@ -595,29 +647,63 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="tag">&lt;...&gt;</td>
-                                <td class="name">...</td>
-                                <td class="description">...</td>
+                                <td class="tag">$ pwd</td>
+                                <td class="name">Print Working Dir.</td>
+                                <td class="description">- displays the file path from the root directory</td>
                             </tr>
                             <tr>
-                                <td class="tag">&lt;...&gt;</td>
-                                <td class="name">...</td>
-                                <td class="description">...</td>
+                                <td class="tag">$ ls</td>
+                                <td class="name">List</td>
+                                <td class="description">- lists the contents of a directory</td>
                             </tr>
                             <tr>
-                                <td class="tag">&lt;...&gt;</td>
-                                <td class="name">...</td>
-                                <td class="description">...</td>
+                                <td class="tag">$ mkdir</td>
+                                <td class="name">Make Directory</td>
+                                <td class="description">- creates new directory in the filesystem</td>
                             </tr>
                             <tr>
-                                <td class="tag">&lt;...&gt;</td>
-                                <td class="name">...</td>
-                                <td class="description">...</td>
+                                <td class="tag">$ cd</td>
+                                <td class="name">Change Directory</td>
+                                <td class="description">- move throughout the filesystem. <strong>../..</strong> to move back up</td>
                             </tr>
                             <tr>
-                                <td class="tag">&lt;...&gt;</td>
-                                <td class="name">...</td>
-                                <td class="description">...</td>
+                                <td class="tag">$ touch</td>
+                                <td class="name">New File</td>
+                                <td class="description">- used to create new files</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--Git Command-->
+                <div id="commands">
+                    <h3>Git Commands</h3>
+                    <table>
+                        <thead>
+                            <th>Tag</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </thead>
+                        </tbody>
+                            <tr>
+                                <td class="tag">$ git init</td>
+                                <td class="name">Init</td>
+                                <td class="description">- creates a new repository</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">$ git add .</td>
+                                <td class="name">Add</td>
+                                <td class="description">- moves modified file to a staging area</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">$ git commit -m</td>
+                                <td class="name">Commit</td>
+                                <td class="description">- submits changes to the local repository</td>
+                            </tr>
+                            <tr>
+                                <td class="tag">$ git push</td>
+                                <td class="name">Push</td>
+                                <td class="description">- uploads local repository to a remote one</td>
                             </tr>
                         </tbody>
                     </table>
