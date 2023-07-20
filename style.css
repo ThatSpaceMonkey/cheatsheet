@@ -23,6 +23,10 @@ h1 {
   font-weight: 900;
 }
 
+nav {
+  background-color: #ffffff;
+}
+
 nav.sidenavl {
   margin-top: -300px;
   margin-left: 0px;
